@@ -1,0 +1,26 @@
+=> What is the definition of server port?
+The server port is a number, which is used to identify a specific process to which an Internet or other network message
+is to be forwarded when it arrives at a server. 
+
+=> What is server port range?
+0 - 65535
+
+=> How many bits does a number above represent?
+16
+
+=> State 10 common server ports.
+25 - SMTP(Simple Mail Transfer Protocol)
+80 - HTTP(Hypertext Transfer Protocol)
+443 - HTTPS
+20,21 - FTP(File Transfer Protocol)
+        Port 20 performs the task of forwarding and transferring of data. It takes over the task of transferring FTP data when it is in active mode.
+        Port 21 performs the task of signaling for FTP. It listens to all of the commands and provides a flow control for data. It is quite essential for maintaining the flow of data.
+23 - TELNET
+143 - MAP(Internet Message Access Protocol)
+3389 - RDP(Remote Desktop Protocol)
+22 - SSH(Secure Shell)
+53 - DNS(Domain Name System)
+67, 68 - DHCP(Dynamic Host Configuration Protocol)
+
+
+
