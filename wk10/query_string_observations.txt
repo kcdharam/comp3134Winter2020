@@ -1,0 +1,7 @@
+1) Browser URL is changeed to https://www.dictionary.com/browse/hello?s=t, and informtion about the 'hello' is displayed
+    on the page.
+2) Browser URL is changed to https://www.dictionary.com/misspelling?term=prtlo&s=t.
+    No results found for 'prtlo' and suggestions were displayed.
+3) Browser URL is changed to dictionary.com/noresult?term=<script>alert(%27hello%27)<%2Fscript>&s=ts.
+    And some information with the terms hello or alert is displayed.
+4) The same as that of number 3.
