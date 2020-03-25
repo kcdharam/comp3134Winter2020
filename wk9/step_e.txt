@@ -1,0 +1,1 @@
+By defining the basename function for the path and selecting only the directories that exist using file_exists($path) function. 

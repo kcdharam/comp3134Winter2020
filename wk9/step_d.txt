@@ -1,0 +1,8 @@
+Warning:  scandir(hello): failed to open dir: No such file or directory in /var/www/html/direcotry_traversal_part1.php on line 6
+
+
+
+Warning:  scandir(): (errno 2): No such file or directory in /var/www/html/direcotry_traversal_part1.php on line 6
+
+1) There are two warnings
+2) The warnings display all the directories of the path to the php file.

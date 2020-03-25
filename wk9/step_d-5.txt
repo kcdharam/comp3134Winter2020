@@ -1,0 +1,7 @@
+1) Array
+(
+    [0] => .
+    [1] => ..
+    [2] => html
+)
+2) It shows the dircory of the php file.

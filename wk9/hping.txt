@@ -1,0 +1,123 @@
+1) hping3 -c 10000 --rand-source 198.96.85.21
+======
+Output
+=======
+root@lamp-s-1vcpu-1gb-tor1-01:/var/www/html# hping3 -c 10000 --rand-source 198.96.85.21
+HPING 198.96.85.21 (eth0 198.96.85.21): NO FLAGS are set, 40 headers + 0 data bytes
+^C
+--- 198.96.85.21 hping statistic ---
+66 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+
+2) hping3 -2 -c 9000  -i 90  104.193.88.77
+======
+Output
+=======
+root@lamp-s-1vcpu-1gb-tor1-01:/var/www/html# hping3 -2 -c 9000  -i 90  104.193.88.77
+HPING 104.193.88.77 (eth0 104.193.88.77): udp mode set, 28 headers + 0 data bytes
+^C
+--- 104.193.88.77 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+
+3) hping3 -1 -c 11000 -d 1000 -i u13.3 104.193.88.77
+
+======
+Output
+======
+root@lamp-s-1vcpu-1gb-tor1-01:/var/www/html# hping3 -1 -c 11000 -d 1000 -i u13.3 104.193.88.77
+HPING 104.193.88.77 (eth0 104.193.88.77): icmp mode set, 28 headers + 1000 data bytes
+len=1028 ip=104.193.88.77 ttl=55 id=13549 icmp_seq=2255 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=48112 icmp_seq=2257 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50556 icmp_seq=2258 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=27600 icmp_seq=2259 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=3345 icmp_seq=2260 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=32878 icmp_seq=2262 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50031 icmp_seq=2263 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=28929 icmp_seq=2264 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=62022 icmp_seq=2265 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=17072 icmp_seq=2266 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=51045 icmp_seq=2267 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=20199 icmp_seq=2268 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=38930 icmp_seq=2269 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=59491 icmp_seq=2270 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=38024 icmp_seq=2272 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=31837 icmp_seq=2275 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=27026 icmp_seq=2276 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=29532 icmp_seq=2277 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=8628 icmp_seq=2279 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=48703 icmp_seq=2280 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=63463 icmp_seq=2281 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=49728 icmp_seq=2282 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=46527 icmp_seq=2283 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=58861 icmp_seq=2284 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=20088 icmp_seq=2285 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=60076 icmp_seq=2286 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=51002 icmp_seq=2287 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=2664 icmp_seq=2288 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=45096 icmp_seq=2289 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=13067 icmp_seq=2290 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=6010 icmp_seq=2291 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=29634 icmp_seq=2292 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=45945 icmp_seq=2293 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=56041 icmp_seq=2294 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=58563 icmp_seq=2295 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=42431 icmp_seq=2296 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=62631 icmp_seq=2299 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=38028 icmp_seq=2301 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=46790 icmp_seq=2302 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=18996 icmp_seq=2303 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=7437 icmp_seq=2304 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=65316 icmp_seq=2305 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50833 icmp_seq=2306 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=34463 icmp_seq=2307 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=29313 icmp_seq=2308 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50348 icmp_seq=2309 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=43092 icmp_seq=2310 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=12480 icmp_seq=2311 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=48276 icmp_seq=2312 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=59007 icmp_seq=2314 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=41601 icmp_seq=2315 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=47372 icmp_seq=2316 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=27068 icmp_seq=2318 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50037 icmp_seq=2319 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=33107 icmp_seq=2320 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=56047 icmp_seq=2322 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=62742 icmp_seq=2323 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=20544 icmp_seq=2324 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=46552 icmp_seq=2325 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=55769 icmp_seq=2326 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=62976 icmp_seq=2327 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=34306 icmp_seq=2329 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=60071 icmp_seq=2330 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=35101 icmp_seq=2331 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=6799 icmp_seq=2332 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=49149 icmp_seq=2391 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=58764 icmp_seq=2393 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=30058 icmp_seq=2395 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=62425 icmp_seq=2396 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=53308 icmp_seq=2397 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=44152 icmp_seq=2398 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=39945 icmp_seq=2399 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=45669 icmp_seq=2400 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=41672 icmp_seq=2402 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=64285 icmp_seq=2403 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=33934 icmp_seq=2404 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50346 icmp_seq=2405 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=5369 icmp_seq=2406 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=42033 icmp_seq=2408 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=61592 icmp_seq=2410 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=43800 icmp_seq=2411 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=8492 icmp_seq=2413 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=30246 icmp_seq=2414 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50427 icmp_seq=2415 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=50087 icmp_seq=2416 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=48557 icmp_seq=2418 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=16251 icmp_seq=2420 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=7785 icmp_seq=2423 rtt=0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=19913 icmp_seq=2424 rtt=0.0 ms
+
+--- 104.193.88.77 hping statistic ---
+11000 packets transmitted, 115 packets received, 99% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+len=1028 ip=104.193.88.77 ttl=55 id=16802 icmp_seq=2427 rtt=0.0 ms
