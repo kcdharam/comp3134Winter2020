@@ -1,1 +1,0 @@
-tcpdump -i any -nn -xx -w all_traffic_20200219_1020.pcap
