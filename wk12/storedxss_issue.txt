@@ -1,0 +1,2 @@
+When var_dump before echo is used to display the text, there are strings inside.
+But without var_dump, to echo out the text, it changes the location of the file and there is nothing to see.
